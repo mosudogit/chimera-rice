@@ -1,0 +1,79 @@
+/* chimera-rice rofi theme */
+
+* {
+    bg:          #1e1e2e;
+    bg-alt:      #313244;
+    fg:          #cdd6f4;
+    fg-dim:      #6c7086;
+    accent:      #cba6f7;
+    font:        "JetBrainsMono Nerd Font 11";
+
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+window {
+    width:            480px;
+    background-color: @bg;
+    border:           2px solid @accent;
+    border-radius:    8px;
+    padding:          0;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          0px;
+    padding:          8px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius:    6px;
+    padding:          10px 12px;
+    spacing:          8px;
+    children:         [ prompt, entry ];
+    margin:           0 0 8px 0;
+}
+
+prompt {
+    text-color: @accent;
+    font:       "JetBrainsMono Nerd Font Bold 11";
+}
+
+entry {
+    background-color:  transparent;
+    placeholder:       "search...";
+    placeholder-color: @fg-dim;
+}
+
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            8;
+    spacing:          2px;
+    fixed-height:     false;
+    scrollbar:        false;
+}
+
+element {
+    background-color: transparent;
+    border-radius:    6px;
+    padding:          8px 10px;
+    spacing:          8px;
+    children:         [ element-icon, element-text ];
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color:       @accent;
+}
+
+element-icon {
+    size:           20px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
