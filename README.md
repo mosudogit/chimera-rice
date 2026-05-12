@@ -10,7 +10,7 @@ theme: Catppuccin Mocha
 ## install
 
 ```sh
-git clone https://github.com/YOUR_USERNAME/chimera-rice
+git clone https://github.com/mosudogit/chimera-rice
 cd chimera-rice
 chmod +x install.sh
 ./install.sh
