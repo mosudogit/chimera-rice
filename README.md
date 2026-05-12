@@ -1,4 +1,4 @@
-# chimera-rice
+# chimeravoid-rice
 
 minimal & clean bspwm desktop for [Chimera Linux](https://chimera-linux.org/)
 
